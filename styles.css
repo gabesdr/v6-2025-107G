@@ -154,13 +154,7 @@ select {
   text-decoration: none;
 }
 
-/**
- * Eftirfarandi setur upp grunn umbrot (layout) síðu með flexbox.
- * Við förum yfir flexbox í viku 4 + verkefni 4 en þangað til er hægt að nota þetta
- * sem grunn og án breytinga.
- * Athugið að til þess að þetta virki þar að setja <div class="wrapper"> utan um allt efni 
- * innan <body> sem á að fylgja þessu (<nav> ætti að vera undanskilið).
- */
+/** Wrapper **/
 .wrapper {
   display: grid;
   grid-template-rows: auto;
@@ -284,7 +278,6 @@ main > section {
 }
 
 /** Forsíða inngangsmynd **/
-
 .intro {
   display: flex;
   position: relative;
@@ -333,11 +326,7 @@ main > section {
   margin-bottom: calc(var(--spacing) * 4);
 }
 
-/**
- * Cards á forsíðu.
- * Líta hræðilega út og erfitt að stýra með float! Lögum í verkefni 4 með því að nota flexbox.
- */
-
+/** Cards **/
 .cards {
   display: grid;
   grid-template-rows: auto;
@@ -425,8 +414,6 @@ main > section {
 }
 
 /** Töflur **/
-
-/* Leyfir skroll á töflu ef pláss er ekki nóg til að birta hana alla lárétt */
 .table-wrapper {
   overflow-x: auto;
 }
