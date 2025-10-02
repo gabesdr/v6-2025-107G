@@ -1,0 +1,33 @@
+
+/** Almennt takka útlit, getur virkað á bæði <a> og <button> **/
+.button {
+    display: inline-block;
+    padding: calc(var(--spacing) * 0.5) var(--spacing);
+    font-size: 1rem;
+    color: var(--color-background-primary);
+    text-decoration: none;
+    background-color: var(--color-background-secondary);
+    border: 0;
+    border-radius: var(--border-radius-regular);
+}
+
+/** Wrapper **/
+.wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    gap: var(--vertical-space);
+
+  /* grid items eru miðjuð */
+    justify-items: center;
+    width: 100%;
+    min-height: 100vh;
+
+  /* pláss fyrir nav, það er nákvæmlega svona hátt */
+    margin-top: var(--height-nav);
+    background-color: var(--color-background-primary);
+}
+
+.wrapper main {
+    flex: 1;
+}

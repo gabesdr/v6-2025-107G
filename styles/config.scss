@@ -43,3 +43,18 @@ $grid: false;
     --font-family-base: "Gelasio", "Georgia", serif;
     --font-family-heading: "Atkinson Hyperlegible", "Courier New", monospace;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background-primary: #000;
+    --color-background-secondary: #fff;
+    --color-accent: #600;
+    --color-protection: rgb(255 255 255 / 50%);
+  }
+}
+
+@media (width >= 700px) {
+    :root {
+        --vertical-space: var(--vertical-space-large);
+    }
+}
